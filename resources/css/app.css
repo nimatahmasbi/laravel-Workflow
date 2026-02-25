@@ -1,0 +1,238 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Dashboard Professional Styles */
+.dashboard-card {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card .card-body {
+    padding: 1.75rem;
+}
+
+.dashboard-stat-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+}
+
+.dashboard-stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0;
+}
+
+.dashboard-stat-icon {
+    color: #64748b;
+    font-size: 2.25rem;
+}
+
+/* Professional Color Scheme - New Palette */
+.card-departments {
+    border-left: 5px solid #334155;
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.card-workflows {
+    border-left: 5px solid #475569;
+    background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%);
+}
+
+.card-tasks {
+    border-left: 5px solid #64748b;
+    background: linear-gradient(135deg, #e2e8f0 0%, #ffffff 100%);
+}
+
+.card-pending {
+    border-left: 5px solid #94a3b8;
+    background: linear-gradient(135deg, #cbd5e1 0%, #ffffff 100%);
+}
+
+/* Table Styles */
+.table-professional {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.table-professional thead th {
+    background: #475569;
+    border: none;
+    padding: 1.25rem 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+.table-professional tbody td {
+    padding: 1.25rem 1rem;
+    border: none;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    font-size: 0.9rem;
+}
+
+/* Status Badges - New Color Scheme */
+.status-badge {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    min-width: 90px;
+    border: 1px solid;
+}
+
+.status-active {
+    background: #f0f9ff;
+    color: #0c4a6e;
+    border-color: #0ea5e9;
+}
+
+.status-inactive {
+    background: #fef2f2;
+    color: #991b1b;
+    border-color: #dc2626;
+}
+
+.status-archived {
+    background: #f8fafc;
+    color: #475569;
+    border-color: #94a3b8;
+}
+
+.status-pending {
+    background: #fffbeb;
+    color: #92400e;
+    border-color: #f59e0b;
+}
+
+.status-in_progress {
+    background: #eff6ff;
+    color: #1e40af;
+    border-color: #3b82f6;
+}
+
+.status-completed {
+    background: #f0fdf4;
+    color: #166534;
+    border-color: #22c55e;
+}
+
+.status-rejected {
+    background: #fef2f2;
+    color: #991b1b;
+    border-color: #dc2626;
+}
+
+.status-on_hold {
+    background: #f8fafc;
+    color: #475569;
+    border-color: #94a3b8;
+}
+
+/* Priority Badges - New Color Scheme */
+.priority-badge {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    min-width: 70px;
+    border: 1px solid;
+}
+
+.priority-1, .priority-low {
+    background: #f0fdf4;
+    color: #166534;
+    border-color: #22c55e;
+}
+
+.priority-2, .priority-medium {
+    background: #fffbeb;
+    color: #92400e;
+    border-color: #f59e0b;
+}
+
+.priority-3, .priority-high {
+    background: #fef2f2;
+    color: #991b1b;
+    border-color: #dc2626;
+}
+
+.priority-4, .priority-critical {
+    background: #fef2f2;
+    color: #7f1d1d;
+    border-color: #b91c1c;
+}
+
+/* Card Headers */
+.card-header-professional {
+    background: #475569;
+    border-bottom: 2px solid #334155;
+    padding: 1.25rem 1.5rem;
+}
+
+.card-header-professional h6 {
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Buttons */
+.btn-professional {
+    background: #475569;
+    border: 2px solid #475569;
+    color: #ffffff;
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: none;
+}
+
+/* Links */
+.link-professional {
+    color: #475569;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+    color: #1e293b;
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid #475569;
+    text-align: center;
+}
+
+.dashboard-title i {
+    color: #475569;
+    margin-left: 0.75rem;
+}
